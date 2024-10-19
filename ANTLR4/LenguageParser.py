@@ -1,4 +1,4 @@
-# Generated from Lenguaje.g4 by ANTLR 4.13.2
+# Generated from Lenguage.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -79,9 +79,9 @@ def serializedATN():
         50,56,59,68,80,102,112,118,134,151,186,188
     ]
 
-class LenguajeParser ( Parser ):
+class LenguageParser ( Parser ):
 
-    grammarFileName = "Lenguaje.g4"
+    grammarFileName = "Lenguage.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -176,17 +176,17 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def EOF(self):
-            return self.getToken(LenguajeParser.EOF, 0)
+            return self.getToken(LenguageParser.EOF, 0)
 
         def procDef(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ProcDefContext)
+                return self.getTypedRuleContexts(LenguageParser.ProcDefContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ProcDefContext,i)
+                return self.getTypedRuleContext(LenguageParser.ProcDefContext,i)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_root
+            return LenguageParser.RULE_root
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRoot" ):
@@ -201,7 +201,7 @@ class LenguajeParser ( Parser ):
 
     def root(self):
 
-        localctx = LenguajeParser.RootContext(self, self._ctx, self.state)
+        localctx = LenguageParser.RootContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_root)
         self._la = 0 # Token type
         try:
@@ -217,7 +217,7 @@ class LenguajeParser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 40
-            self.match(LenguajeParser.EOF)
+            self.match(LenguageParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -236,13 +236,13 @@ class LenguajeParser ( Parser ):
 
         def ins(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.InsContext)
+                return self.getTypedRuleContexts(LenguageParser.InsContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.InsContext,i)
+                return self.getTypedRuleContext(LenguageParser.InsContext,i)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_inss
+            return LenguageParser.RULE_inss
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterInss" ):
@@ -257,7 +257,7 @@ class LenguajeParser ( Parser ):
 
     def inss(self):
 
-        localctx = LenguajeParser.InssContext(self, self._ctx, self.state)
+        localctx = LenguageParser.InssContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_inss)
         self._la = 0 # Token type
         try:
@@ -289,35 +289,35 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def condition(self):
-            return self.getTypedRuleContext(LenguajeParser.ConditionContext,0)
+            return self.getTypedRuleContext(LenguageParser.ConditionContext,0)
 
 
         def while_(self):
-            return self.getTypedRuleContext(LenguajeParser.While_Context,0)
+            return self.getTypedRuleContext(LenguageParser.While_Context,0)
 
 
         def input_(self):
-            return self.getTypedRuleContext(LenguajeParser.Input_Context,0)
+            return self.getTypedRuleContext(LenguageParser.Input_Context,0)
 
 
         def output_(self):
-            return self.getTypedRuleContext(LenguajeParser.Output_Context,0)
+            return self.getTypedRuleContext(LenguageParser.Output_Context,0)
 
 
         def proc(self):
-            return self.getTypedRuleContext(LenguajeParser.ProcContext,0)
+            return self.getTypedRuleContext(LenguageParser.ProcContext,0)
 
 
         def assign(self):
-            return self.getTypedRuleContext(LenguajeParser.AssignContext,0)
+            return self.getTypedRuleContext(LenguageParser.AssignContext,0)
 
 
         def agregado(self):
-            return self.getTypedRuleContext(LenguajeParser.AgregadoContext,0)
+            return self.getTypedRuleContext(LenguageParser.AgregadoContext,0)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_ins
+            return LenguageParser.RULE_ins
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterIns" ):
@@ -332,7 +332,7 @@ class LenguajeParser ( Parser ):
 
     def ins(self):
 
-        localctx = LenguajeParser.InsContext(self, self._ctx, self.state)
+        localctx = LenguageParser.InsContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_ins)
         try:
             self.state = 59
@@ -406,10 +406,10 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def VAR(self):
-            return self.getToken(LenguajeParser.VAR, 0)
+            return self.getToken(LenguageParser.VAR, 0)
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_input_
+            return LenguageParser.RULE_input_
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterInput_" ):
@@ -424,14 +424,14 @@ class LenguajeParser ( Parser ):
 
     def input_(self):
 
-        localctx = LenguajeParser.Input_Context(self, self._ctx, self.state)
+        localctx = LenguageParser.Input_Context(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_input_)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 61
-            self.match(LenguajeParser.T__0)
+            self.match(LenguageParser.T__0)
             self.state = 62
-            self.match(LenguajeParser.VAR)
+            self.match(LenguageParser.VAR)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -450,13 +450,13 @@ class LenguajeParser ( Parser ):
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_output_
+            return LenguageParser.RULE_output_
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterOutput_" ):
@@ -471,12 +471,12 @@ class LenguajeParser ( Parser ):
 
     def output_(self):
 
-        localctx = LenguajeParser.Output_Context(self, self._ctx, self.state)
+        localctx = LenguageParser.Output_Context(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_output_)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 64
-            self.match(LenguajeParser.T__1)
+            self.match(LenguageParser.T__1)
             self.state = 66 
             self._errHandler.sync(self)
             _alt = 1
@@ -508,30 +508,30 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def expr(self):
-            return self.getTypedRuleContext(LenguajeParser.ExprContext,0)
+            return self.getTypedRuleContext(LenguageParser.ExprContext,0)
 
 
         def LB(self, i:int=None):
             if i is None:
-                return self.getTokens(LenguajeParser.LB)
+                return self.getTokens(LenguageParser.LB)
             else:
-                return self.getToken(LenguajeParser.LB, i)
+                return self.getToken(LenguageParser.LB, i)
 
         def inss(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.InssContext)
+                return self.getTypedRuleContexts(LenguageParser.InssContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.InssContext,i)
+                return self.getTypedRuleContext(LenguageParser.InssContext,i)
 
 
         def RB(self, i:int=None):
             if i is None:
-                return self.getTokens(LenguajeParser.RB)
+                return self.getTokens(LenguageParser.RB)
             else:
-                return self.getToken(LenguajeParser.RB, i)
+                return self.getToken(LenguageParser.RB, i)
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_condition
+            return LenguageParser.RULE_condition
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterCondition" ):
@@ -546,33 +546,33 @@ class LenguajeParser ( Parser ):
 
     def condition(self):
 
-        localctx = LenguajeParser.ConditionContext(self, self._ctx, self.state)
+        localctx = LenguageParser.ConditionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_condition)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 70
-            self.match(LenguajeParser.T__2)
+            self.match(LenguageParser.T__2)
             self.state = 71
             self.expr(0)
             self.state = 72
-            self.match(LenguajeParser.LB)
+            self.match(LenguageParser.LB)
             self.state = 73
             self.inss()
             self.state = 74
-            self.match(LenguajeParser.RB)
+            self.match(LenguageParser.RB)
             self.state = 80
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==4:
                 self.state = 75
-                self.match(LenguajeParser.T__3)
+                self.match(LenguageParser.T__3)
                 self.state = 76
-                self.match(LenguajeParser.LB)
+                self.match(LenguageParser.LB)
                 self.state = 77
                 self.inss()
                 self.state = 78
-                self.match(LenguajeParser.RB)
+                self.match(LenguageParser.RB)
 
 
         except RecognitionException as re:
@@ -592,21 +592,21 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def expr(self):
-            return self.getTypedRuleContext(LenguajeParser.ExprContext,0)
+            return self.getTypedRuleContext(LenguageParser.ExprContext,0)
 
 
         def LB(self):
-            return self.getToken(LenguajeParser.LB, 0)
+            return self.getToken(LenguageParser.LB, 0)
 
         def inss(self):
-            return self.getTypedRuleContext(LenguajeParser.InssContext,0)
+            return self.getTypedRuleContext(LenguageParser.InssContext,0)
 
 
         def RB(self):
-            return self.getToken(LenguajeParser.RB, 0)
+            return self.getToken(LenguageParser.RB, 0)
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_while_
+            return LenguageParser.RULE_while_
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterWhile_" ):
@@ -621,20 +621,20 @@ class LenguajeParser ( Parser ):
 
     def while_(self):
 
-        localctx = LenguajeParser.While_Context(self, self._ctx, self.state)
+        localctx = LenguageParser.While_Context(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_while_)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 82
-            self.match(LenguajeParser.T__4)
+            self.match(LenguageParser.T__4)
             self.state = 83
             self.expr(0)
             self.state = 84
-            self.match(LenguajeParser.LB)
+            self.match(LenguageParser.LB)
             self.state = 85
             self.inss()
             self.state = 86
-            self.match(LenguajeParser.RB)
+            self.match(LenguageParser.RB)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -652,13 +652,13 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def SIZE(self):
-            return self.getToken(LenguajeParser.SIZE, 0)
+            return self.getToken(LenguageParser.SIZE, 0)
 
         def VAR(self):
-            return self.getToken(LenguajeParser.VAR, 0)
+            return self.getToken(LenguageParser.VAR, 0)
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_siz
+            return LenguageParser.RULE_siz
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterSiz" ):
@@ -673,14 +673,14 @@ class LenguajeParser ( Parser ):
 
     def siz(self):
 
-        localctx = LenguajeParser.SizContext(self, self._ctx, self.state)
+        localctx = LenguageParser.SizContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_siz)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 88
-            self.match(LenguajeParser.SIZE)
+            self.match(LenguageParser.SIZE)
             self.state = 89
-            self.match(LenguajeParser.VAR)
+            self.match(LenguageParser.VAR)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -698,24 +698,24 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def PROCNAME(self):
-            return self.getToken(LenguajeParser.PROCNAME, 0)
+            return self.getToken(LenguageParser.PROCNAME, 0)
 
         def paramsId(self):
-            return self.getTypedRuleContext(LenguajeParser.ParamsIdContext,0)
+            return self.getTypedRuleContext(LenguageParser.ParamsIdContext,0)
 
 
         def LB(self):
-            return self.getToken(LenguajeParser.LB, 0)
+            return self.getToken(LenguageParser.LB, 0)
 
         def inss(self):
-            return self.getTypedRuleContext(LenguajeParser.InssContext,0)
+            return self.getTypedRuleContext(LenguageParser.InssContext,0)
 
 
         def RB(self):
-            return self.getToken(LenguajeParser.RB, 0)
+            return self.getToken(LenguageParser.RB, 0)
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_procDef
+            return LenguageParser.RULE_procDef
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterProcDef" ):
@@ -730,20 +730,20 @@ class LenguajeParser ( Parser ):
 
     def procDef(self):
 
-        localctx = LenguajeParser.ProcDefContext(self, self._ctx, self.state)
+        localctx = LenguageParser.ProcDefContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_procDef)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 91
-            self.match(LenguajeParser.PROCNAME)
+            self.match(LenguageParser.PROCNAME)
             self.state = 92
             self.paramsId()
             self.state = 93
-            self.match(LenguajeParser.LB)
+            self.match(LenguageParser.LB)
             self.state = 94
             self.inss()
             self.state = 95
-            self.match(LenguajeParser.RB)
+            self.match(LenguageParser.RB)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -761,21 +761,21 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def PROCNAME(self):
-            return self.getToken(LenguajeParser.PROCNAME, 0)
+            return self.getToken(LenguageParser.PROCNAME, 0)
 
         def paramsExpr(self):
-            return self.getTypedRuleContext(LenguajeParser.ParamsExprContext,0)
+            return self.getTypedRuleContext(LenguageParser.ParamsExprContext,0)
 
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_proc
+            return LenguageParser.RULE_proc
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterProc" ):
@@ -790,12 +790,12 @@ class LenguajeParser ( Parser ):
 
     def proc(self):
 
-        localctx = LenguajeParser.ProcContext(self, self._ctx, self.state)
+        localctx = LenguageParser.ProcContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_proc)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 97
-            self.match(LenguajeParser.PROCNAME)
+            self.match(LenguageParser.PROCNAME)
             self.state = 98
             self.paramsExpr()
             self.state = 102
@@ -826,17 +826,17 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def VAR(self):
-            return self.getToken(LenguajeParser.VAR, 0)
+            return self.getToken(LenguageParser.VAR, 0)
 
         def ASSIGN(self):
-            return self.getToken(LenguajeParser.ASSIGN, 0)
+            return self.getToken(LenguageParser.ASSIGN, 0)
 
         def expr(self):
-            return self.getTypedRuleContext(LenguajeParser.ExprContext,0)
+            return self.getTypedRuleContext(LenguageParser.ExprContext,0)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_assign
+            return LenguageParser.RULE_assign
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterAssign" ):
@@ -851,14 +851,14 @@ class LenguajeParser ( Parser ):
 
     def assign(self):
 
-        localctx = LenguajeParser.AssignContext(self, self._ctx, self.state)
+        localctx = LenguageParser.AssignContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_assign)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 105
-            self.match(LenguajeParser.VAR)
+            self.match(LenguageParser.VAR)
             self.state = 106
-            self.match(LenguajeParser.ASSIGN)
+            self.match(LenguageParser.ASSIGN)
             self.state = 107
             self.expr(0)
         except RecognitionException as re:
@@ -879,12 +879,12 @@ class LenguajeParser ( Parser ):
 
         def VAR(self, i:int=None):
             if i is None:
-                return self.getTokens(LenguajeParser.VAR)
+                return self.getTokens(LenguageParser.VAR)
             else:
-                return self.getToken(LenguajeParser.VAR, i)
+                return self.getToken(LenguageParser.VAR, i)
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_paramsId
+            return LenguageParser.RULE_paramsId
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterParamsId" ):
@@ -899,7 +899,7 @@ class LenguajeParser ( Parser ):
 
     def paramsId(self):
 
-        localctx = LenguajeParser.ParamsIdContext(self, self._ctx, self.state)
+        localctx = LenguageParser.ParamsIdContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_paramsId)
         self._la = 0 # Token type
         try:
@@ -909,7 +909,7 @@ class LenguajeParser ( Parser ):
             _la = self._input.LA(1)
             while _la==30:
                 self.state = 109
-                self.match(LenguajeParser.VAR)
+                self.match(LenguageParser.VAR)
                 self.state = 114
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
@@ -932,13 +932,13 @@ class LenguajeParser ( Parser ):
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_paramsExpr
+            return LenguageParser.RULE_paramsExpr
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterParamsExpr" ):
@@ -953,7 +953,7 @@ class LenguajeParser ( Parser ):
 
     def paramsExpr(self):
 
-        localctx = LenguajeParser.ParamsExprContext(self, self._ctx, self.state)
+        localctx = LenguageParser.ParamsExprContext(self, self._ctx, self.state)
         self.enterRule(localctx, 24, self.RULE_paramsExpr)
         try:
             self.enterOuterAlt(localctx, 1)
@@ -985,20 +985,20 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def VAR(self):
-            return self.getToken(LenguajeParser.VAR, 0)
+            return self.getToken(LenguageParser.VAR, 0)
 
         def LS(self):
-            return self.getToken(LenguajeParser.LS, 0)
+            return self.getToken(LenguageParser.LS, 0)
 
         def expr(self):
-            return self.getTypedRuleContext(LenguajeParser.ExprContext,0)
+            return self.getTypedRuleContext(LenguageParser.ExprContext,0)
 
 
         def RS(self):
-            return self.getToken(LenguajeParser.RS, 0)
+            return self.getToken(LenguageParser.RS, 0)
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_consult
+            return LenguageParser.RULE_consult
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterConsult" ):
@@ -1013,18 +1013,18 @@ class LenguajeParser ( Parser ):
 
     def consult(self):
 
-        localctx = LenguajeParser.ConsultContext(self, self._ctx, self.state)
+        localctx = LenguageParser.ConsultContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_consult)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 121
-            self.match(LenguajeParser.VAR)
+            self.match(LenguageParser.VAR)
             self.state = 122
-            self.match(LenguajeParser.LS)
+            self.match(LenguageParser.LS)
             self.state = 123
             self.expr(0)
             self.state = 124
-            self.match(LenguajeParser.RS)
+            self.match(LenguageParser.RS)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1042,17 +1042,17 @@ class LenguajeParser ( Parser ):
             self.parser = parser
 
         def VAR(self):
-            return self.getToken(LenguajeParser.VAR, 0)
+            return self.getToken(LenguageParser.VAR, 0)
 
         def AGREGADO(self):
-            return self.getToken(LenguajeParser.AGREGADO, 0)
+            return self.getToken(LenguageParser.AGREGADO, 0)
 
         def expr(self):
-            return self.getTypedRuleContext(LenguajeParser.ExprContext,0)
+            return self.getTypedRuleContext(LenguageParser.ExprContext,0)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_agregado
+            return LenguageParser.RULE_agregado
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterAgregado" ):
@@ -1067,14 +1067,14 @@ class LenguajeParser ( Parser ):
 
     def agregado(self):
 
-        localctx = LenguajeParser.AgregadoContext(self, self._ctx, self.state)
+        localctx = LenguageParser.AgregadoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 28, self.RULE_agregado)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 126
-            self.match(LenguajeParser.VAR)
+            self.match(LenguageParser.VAR)
             self.state = 127
-            self.match(LenguajeParser.AGREGADO)
+            self.match(LenguageParser.AGREGADO)
             self.state = 128
             self.expr(0)
         except RecognitionException as re:
@@ -1095,13 +1095,13 @@ class LenguajeParser ( Parser ):
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_lista
+            return LenguageParser.RULE_lista
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterLista" ):
@@ -1116,13 +1116,13 @@ class LenguajeParser ( Parser ):
 
     def lista(self):
 
-        localctx = LenguajeParser.ListaContext(self, self._ctx, self.state)
+        localctx = LenguageParser.ListaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 30, self.RULE_lista)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 130
-            self.match(LenguajeParser.T__5)
+            self.match(LenguageParser.T__5)
             self.state = 134
             self._errHandler.sync(self)
             _la = self._input.LA(1)
@@ -1134,7 +1134,7 @@ class LenguajeParser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 137
-            self.match(LenguajeParser.T__6)
+            self.match(LenguageParser.T__6)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1153,7 +1153,7 @@ class LenguajeParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return LenguajeParser.RULE_expr
+            return LenguageParser.RULE_expr
 
      
         def copyFrom(self, ctx:ParserRuleContext):
@@ -1162,18 +1162,18 @@ class LenguajeParser ( Parser ):
 
     class ModContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def MOD(self):
-            return self.getToken(LenguajeParser.MOD, 0)
+            return self.getToken(LenguageParser.MOD, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMod" ):
@@ -1186,12 +1186,12 @@ class LenguajeParser ( Parser ):
 
     class TacticContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def TACTIC(self):
-            return self.getToken(LenguajeParser.TACTIC, 0)
+            return self.getToken(LenguageParser.TACTIC, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterTactic" ):
@@ -1204,18 +1204,18 @@ class LenguajeParser ( Parser ):
 
     class MulContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def MUL(self):
-            return self.getToken(LenguajeParser.MUL, 0)
+            return self.getToken(LenguageParser.MUL, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMul" ):
@@ -1228,12 +1228,12 @@ class LenguajeParser ( Parser ):
 
     class VarContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def VAR(self):
-            return self.getToken(LenguajeParser.VAR, 0)
+            return self.getToken(LenguageParser.VAR, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterVar" ):
@@ -1246,17 +1246,17 @@ class LenguajeParser ( Parser ):
 
     class ParensContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def LP(self):
-            return self.getToken(LenguajeParser.LP, 0)
+            return self.getToken(LenguageParser.LP, 0)
         def expr(self):
-            return self.getTypedRuleContext(LenguajeParser.ExprContext,0)
+            return self.getTypedRuleContext(LenguageParser.ExprContext,0)
 
         def RP(self):
-            return self.getToken(LenguajeParser.RP, 0)
+            return self.getToken(LenguageParser.RP, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterParens" ):
@@ -1269,12 +1269,12 @@ class LenguajeParser ( Parser ):
 
     class NumContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def NUM(self):
-            return self.getToken(LenguajeParser.NUM, 0)
+            return self.getToken(LenguageParser.NUM, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterNum" ):
@@ -1287,12 +1287,12 @@ class LenguajeParser ( Parser ):
 
     class SzContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def siz(self):
-            return self.getTypedRuleContext(LenguajeParser.SizContext,0)
+            return self.getTypedRuleContext(LenguageParser.SizContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1306,18 +1306,18 @@ class LenguajeParser ( Parser ):
 
     class LtContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def LT(self):
-            return self.getToken(LenguajeParser.LT, 0)
+            return self.getToken(LenguageParser.LT, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterLt" ):
@@ -1330,18 +1330,18 @@ class LenguajeParser ( Parser ):
 
     class SumContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def SUM(self):
-            return self.getToken(LenguajeParser.SUM, 0)
+            return self.getToken(LenguageParser.SUM, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterSum" ):
@@ -1354,12 +1354,12 @@ class LenguajeParser ( Parser ):
 
     class StringContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def STRING(self):
-            return self.getToken(LenguajeParser.STRING, 0)
+            return self.getToken(LenguageParser.STRING, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterString" ):
@@ -1372,12 +1372,12 @@ class LenguajeParser ( Parser ):
 
     class LstContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def lista(self):
-            return self.getTypedRuleContext(LenguajeParser.ListaContext,0)
+            return self.getTypedRuleContext(LenguageParser.ListaContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1391,18 +1391,18 @@ class LenguajeParser ( Parser ):
 
     class EqContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def EQ(self):
-            return self.getToken(LenguajeParser.EQ, 0)
+            return self.getToken(LenguageParser.EQ, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterEq" ):
@@ -1415,18 +1415,18 @@ class LenguajeParser ( Parser ):
 
     class GtContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def GT(self):
-            return self.getToken(LenguajeParser.GT, 0)
+            return self.getToken(LenguageParser.GT, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterGt" ):
@@ -1439,18 +1439,18 @@ class LenguajeParser ( Parser ):
 
     class DivContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def DIV(self):
-            return self.getToken(LenguajeParser.DIV, 0)
+            return self.getToken(LenguageParser.DIV, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterDiv" ):
@@ -1463,18 +1463,18 @@ class LenguajeParser ( Parser ):
 
     class MinContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def MIN(self):
-            return self.getToken(LenguajeParser.MIN, 0)
+            return self.getToken(LenguageParser.MIN, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterMin" ):
@@ -1487,12 +1487,12 @@ class LenguajeParser ( Parser ):
 
     class ConsulContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def consult(self):
-            return self.getTypedRuleContext(LenguajeParser.ConsultContext,0)
+            return self.getTypedRuleContext(LenguageParser.ConsultContext,0)
 
 
         def enterRule(self, listener:ParseTreeListener):
@@ -1506,18 +1506,18 @@ class LenguajeParser ( Parser ):
 
     class GetContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def GET(self):
-            return self.getToken(LenguajeParser.GET, 0)
+            return self.getToken(LenguageParser.GET, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterGet" ):
@@ -1530,18 +1530,18 @@ class LenguajeParser ( Parser ):
 
     class LetContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def LET(self):
-            return self.getToken(LenguajeParser.LET, 0)
+            return self.getToken(LenguageParser.LET, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterLet" ):
@@ -1554,18 +1554,18 @@ class LenguajeParser ( Parser ):
 
     class NeqContext(ExprContext):
 
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguajeParser.ExprContext
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a LenguageParser.ExprContext
             super().__init__(parser)
             self.copyFrom(ctx)
 
         def expr(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(LenguajeParser.ExprContext)
+                return self.getTypedRuleContexts(LenguageParser.ExprContext)
             else:
-                return self.getTypedRuleContext(LenguajeParser.ExprContext,i)
+                return self.getTypedRuleContext(LenguageParser.ExprContext,i)
 
         def NEQ(self):
-            return self.getToken(LenguajeParser.NEQ, 0)
+            return self.getToken(LenguageParser.NEQ, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterNeq" ):
@@ -1580,7 +1580,7 @@ class LenguajeParser ( Parser ):
     def expr(self, _p:int=0):
         _parentctx = self._ctx
         _parentState = self.state
-        localctx = LenguajeParser.ExprContext(self, self._ctx, _parentState)
+        localctx = LenguageParser.ExprContext(self, self._ctx, _parentState)
         _prevctx = localctx
         _startState = 32
         self.enterRecursionRule(localctx, 32, self.RULE_expr, _p)
@@ -1590,32 +1590,32 @@ class LenguajeParser ( Parser ):
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
             if la_ == 1:
-                localctx = LenguajeParser.VarContext(self, localctx)
+                localctx = LenguageParser.VarContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
                 self.state = 140
-                self.match(LenguajeParser.VAR)
+                self.match(LenguageParser.VAR)
                 pass
 
             elif la_ == 2:
-                localctx = LenguajeParser.StringContext(self, localctx)
+                localctx = LenguageParser.StringContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 141
-                self.match(LenguajeParser.STRING)
+                self.match(LenguageParser.STRING)
                 pass
 
             elif la_ == 3:
-                localctx = LenguajeParser.NumContext(self, localctx)
+                localctx = LenguageParser.NumContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 142
-                self.match(LenguajeParser.NUM)
+                self.match(LenguageParser.NUM)
                 pass
 
             elif la_ == 4:
-                localctx = LenguajeParser.LstContext(self, localctx)
+                localctx = LenguageParser.LstContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 143
@@ -1623,7 +1623,7 @@ class LenguajeParser ( Parser ):
                 pass
 
             elif la_ == 5:
-                localctx = LenguajeParser.SzContext(self, localctx)
+                localctx = LenguageParser.SzContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 144
@@ -1631,7 +1631,7 @@ class LenguajeParser ( Parser ):
                 pass
 
             elif la_ == 6:
-                localctx = LenguajeParser.ConsulContext(self, localctx)
+                localctx = LenguageParser.ConsulContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 145
@@ -1639,23 +1639,23 @@ class LenguajeParser ( Parser ):
                 pass
 
             elif la_ == 7:
-                localctx = LenguajeParser.TacticContext(self, localctx)
+                localctx = LenguageParser.TacticContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 146
-                self.match(LenguajeParser.TACTIC)
+                self.match(LenguageParser.TACTIC)
                 pass
 
             elif la_ == 8:
-                localctx = LenguajeParser.ParensContext(self, localctx)
+                localctx = LenguageParser.ParensContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
                 self.state = 147
-                self.match(LenguajeParser.LP)
+                self.match(LenguageParser.LP)
                 self.state = 148
                 self.expr(0)
                 self.state = 149
-                self.match(LenguajeParser.RP)
+                self.match(LenguageParser.RP)
                 pass
 
 
@@ -1672,144 +1672,144 @@ class LenguajeParser ( Parser ):
                     self._errHandler.sync(self)
                     la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
                     if la_ == 1:
-                        localctx = LenguajeParser.MulContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.MulContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 153
                         if not self.precpred(self._ctx, 19):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 19)")
                         self.state = 154
-                        self.match(LenguajeParser.MUL)
+                        self.match(LenguageParser.MUL)
                         self.state = 155
                         self.expr(20)
                         pass
 
                     elif la_ == 2:
-                        localctx = LenguajeParser.DivContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.DivContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 156
                         if not self.precpred(self._ctx, 18):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 18)")
                         self.state = 157
-                        self.match(LenguajeParser.DIV)
+                        self.match(LenguageParser.DIV)
                         self.state = 158
                         self.expr(19)
                         pass
 
                     elif la_ == 3:
-                        localctx = LenguajeParser.ModContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.ModContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 159
                         if not self.precpred(self._ctx, 17):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 17)")
                         self.state = 160
-                        self.match(LenguajeParser.MOD)
+                        self.match(LenguageParser.MOD)
                         self.state = 161
                         self.expr(18)
                         pass
 
                     elif la_ == 4:
-                        localctx = LenguajeParser.SumContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.SumContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 162
                         if not self.precpred(self._ctx, 16):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 16)")
                         self.state = 163
-                        self.match(LenguajeParser.SUM)
+                        self.match(LenguageParser.SUM)
                         self.state = 164
                         self.expr(17)
                         pass
 
                     elif la_ == 5:
-                        localctx = LenguajeParser.MinContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.MinContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 165
                         if not self.precpred(self._ctx, 15):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 15)")
                         self.state = 166
-                        self.match(LenguajeParser.MIN)
+                        self.match(LenguageParser.MIN)
                         self.state = 167
                         self.expr(16)
                         pass
 
                     elif la_ == 6:
-                        localctx = LenguajeParser.GtContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.GtContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 168
                         if not self.precpred(self._ctx, 14):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 14)")
                         self.state = 169
-                        self.match(LenguajeParser.GT)
+                        self.match(LenguageParser.GT)
                         self.state = 170
                         self.expr(15)
                         pass
 
                     elif la_ == 7:
-                        localctx = LenguajeParser.GetContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.GetContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 171
                         if not self.precpred(self._ctx, 13):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 13)")
                         self.state = 172
-                        self.match(LenguajeParser.GET)
+                        self.match(LenguageParser.GET)
                         self.state = 173
                         self.expr(14)
                         pass
 
                     elif la_ == 8:
-                        localctx = LenguajeParser.LtContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.LtContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 174
                         if not self.precpred(self._ctx, 12):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 12)")
                         self.state = 175
-                        self.match(LenguajeParser.LT)
+                        self.match(LenguageParser.LT)
                         self.state = 176
                         self.expr(13)
                         pass
 
                     elif la_ == 9:
-                        localctx = LenguajeParser.LetContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.LetContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 177
                         if not self.precpred(self._ctx, 11):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 11)")
                         self.state = 178
-                        self.match(LenguajeParser.LET)
+                        self.match(LenguageParser.LET)
                         self.state = 179
                         self.expr(12)
                         pass
 
                     elif la_ == 10:
-                        localctx = LenguajeParser.EqContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.EqContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 180
                         if not self.precpred(self._ctx, 10):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 10)")
                         self.state = 181
-                        self.match(LenguajeParser.EQ)
+                        self.match(LenguageParser.EQ)
                         self.state = 182
                         self.expr(11)
                         pass
 
                     elif la_ == 11:
-                        localctx = LenguajeParser.NeqContext(self, LenguajeParser.ExprContext(self, _parentctx, _parentState))
+                        localctx = LenguageParser.NeqContext(self, LenguageParser.ExprContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
                         self.state = 183
                         if not self.precpred(self._ctx, 9):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 9)")
                         self.state = 184
-                        self.match(LenguajeParser.NEQ)
+                        self.match(LenguageParser.NEQ)
                         self.state = 185
                         self.expr(10)
                         pass

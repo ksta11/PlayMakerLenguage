@@ -1,4 +1,4 @@
-// Generated from c:/Users/plays/Documents/Paradigmas/mplsoccer/ANTLR4/Lenguaje.g4 by ANTLR 4.13.1
+// Generated from c:/Users/plays/Documents/Paradigmas/mplsoccer/ANTLR4/Lenguage.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
-public class LenguajeParser extends Parser {
+public class LenguageParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -86,7 +86,7 @@ public class LenguajeParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Lenguaje.g4"; }
+	public String getGrammarFileName() { return "Lenguage.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -97,14 +97,14 @@ public class LenguajeParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public LenguajeParser(TokenStream input) {
+	public LenguageParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class RootContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(LenguajeParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(LenguageParser.EOF, 0); }
 		public List<ProcDefContext> procDef() {
 			return getRuleContexts(ProcDefContext.class);
 		}
@@ -319,7 +319,7 @@ public class LenguajeParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Input_Context extends ParserRuleContext {
-		public TerminalNode VAR() { return getToken(LenguajeParser.VAR, 0); }
+		public TerminalNode VAR() { return getToken(LenguageParser.VAR, 0); }
 		public Input_Context(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -410,9 +410,9 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
-		public List<TerminalNode> LB() { return getTokens(LenguajeParser.LB); }
+		public List<TerminalNode> LB() { return getTokens(LenguageParser.LB); }
 		public TerminalNode LB(int i) {
-			return getToken(LenguajeParser.LB, i);
+			return getToken(LenguageParser.LB, i);
 		}
 		public List<InssContext> inss() {
 			return getRuleContexts(InssContext.class);
@@ -420,9 +420,9 @@ public class LenguajeParser extends Parser {
 		public InssContext inss(int i) {
 			return getRuleContext(InssContext.class,i);
 		}
-		public List<TerminalNode> RB() { return getTokens(LenguajeParser.RB); }
+		public List<TerminalNode> RB() { return getTokens(LenguageParser.RB); }
 		public TerminalNode RB(int i) {
-			return getToken(LenguajeParser.RB, i);
+			return getToken(LenguageParser.RB, i);
 		}
 		public ConditionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -481,11 +481,11 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
-		public TerminalNode LB() { return getToken(LenguajeParser.LB, 0); }
+		public TerminalNode LB() { return getToken(LenguageParser.LB, 0); }
 		public InssContext inss() {
 			return getRuleContext(InssContext.class,0);
 		}
-		public TerminalNode RB() { return getToken(LenguajeParser.RB, 0); }
+		public TerminalNode RB() { return getToken(LenguageParser.RB, 0); }
 		public While_Context(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -523,8 +523,8 @@ public class LenguajeParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class SizContext extends ParserRuleContext {
-		public TerminalNode SIZE() { return getToken(LenguajeParser.SIZE, 0); }
-		public TerminalNode VAR() { return getToken(LenguajeParser.VAR, 0); }
+		public TerminalNode SIZE() { return getToken(LenguageParser.SIZE, 0); }
+		public TerminalNode VAR() { return getToken(LenguageParser.VAR, 0); }
 		public SizContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -556,15 +556,15 @@ public class LenguajeParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ProcDefContext extends ParserRuleContext {
-		public TerminalNode PROCNAME() { return getToken(LenguajeParser.PROCNAME, 0); }
+		public TerminalNode PROCNAME() { return getToken(LenguageParser.PROCNAME, 0); }
 		public ParamsIdContext paramsId() {
 			return getRuleContext(ParamsIdContext.class,0);
 		}
-		public TerminalNode LB() { return getToken(LenguajeParser.LB, 0); }
+		public TerminalNode LB() { return getToken(LenguageParser.LB, 0); }
 		public InssContext inss() {
 			return getRuleContext(InssContext.class,0);
 		}
-		public TerminalNode RB() { return getToken(LenguajeParser.RB, 0); }
+		public TerminalNode RB() { return getToken(LenguageParser.RB, 0); }
 		public ProcDefContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -602,7 +602,7 @@ public class LenguajeParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ProcContext extends ParserRuleContext {
-		public TerminalNode PROCNAME() { return getToken(LenguajeParser.PROCNAME, 0); }
+		public TerminalNode PROCNAME() { return getToken(LenguageParser.PROCNAME, 0); }
 		public ParamsExprContext paramsExpr() {
 			return getRuleContext(ParamsExprContext.class,0);
 		}
@@ -660,8 +660,8 @@ public class LenguajeParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class AssignContext extends ParserRuleContext {
-		public TerminalNode VAR() { return getToken(LenguajeParser.VAR, 0); }
-		public TerminalNode ASSIGN() { return getToken(LenguajeParser.ASSIGN, 0); }
+		public TerminalNode VAR() { return getToken(LenguageParser.VAR, 0); }
+		public TerminalNode ASSIGN() { return getToken(LenguageParser.ASSIGN, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
@@ -698,9 +698,9 @@ public class LenguajeParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ParamsIdContext extends ParserRuleContext {
-		public List<TerminalNode> VAR() { return getTokens(LenguajeParser.VAR); }
+		public List<TerminalNode> VAR() { return getTokens(LenguageParser.VAR); }
 		public TerminalNode VAR(int i) {
-			return getToken(LenguajeParser.VAR, i);
+			return getToken(LenguageParser.VAR, i);
 		}
 		public ParamsIdContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -794,12 +794,12 @@ public class LenguajeParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ConsultContext extends ParserRuleContext {
-		public TerminalNode VAR() { return getToken(LenguajeParser.VAR, 0); }
-		public TerminalNode LS() { return getToken(LenguajeParser.LS, 0); }
+		public TerminalNode VAR() { return getToken(LenguageParser.VAR, 0); }
+		public TerminalNode LS() { return getToken(LenguageParser.LS, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
-		public TerminalNode RS() { return getToken(LenguajeParser.RS, 0); }
+		public TerminalNode RS() { return getToken(LenguageParser.RS, 0); }
 		public ConsultContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -835,8 +835,8 @@ public class LenguajeParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class AgregadoContext extends ParserRuleContext {
-		public TerminalNode VAR() { return getToken(LenguajeParser.VAR, 0); }
-		public TerminalNode AGREGADO() { return getToken(LenguajeParser.AGREGADO, 0); }
+		public TerminalNode VAR() { return getToken(LenguageParser.VAR, 0); }
+		public TerminalNode AGREGADO() { return getToken(LenguageParser.AGREGADO, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
@@ -943,12 +943,12 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode MOD() { return getToken(LenguajeParser.MOD, 0); }
+		public TerminalNode MOD() { return getToken(LenguageParser.MOD, 0); }
 		public ModContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class TacticContext extends ExprContext {
-		public TerminalNode TACTIC() { return getToken(LenguajeParser.TACTIC, 0); }
+		public TerminalNode TACTIC() { return getToken(LenguageParser.TACTIC, 0); }
 		public TacticContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -959,26 +959,26 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode MUL() { return getToken(LenguajeParser.MUL, 0); }
+		public TerminalNode MUL() { return getToken(LenguageParser.MUL, 0); }
 		public MulContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class VarContext extends ExprContext {
-		public TerminalNode VAR() { return getToken(LenguajeParser.VAR, 0); }
+		public TerminalNode VAR() { return getToken(LenguageParser.VAR, 0); }
 		public VarContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class ParensContext extends ExprContext {
-		public TerminalNode LP() { return getToken(LenguajeParser.LP, 0); }
+		public TerminalNode LP() { return getToken(LenguageParser.LP, 0); }
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
-		public TerminalNode RP() { return getToken(LenguajeParser.RP, 0); }
+		public TerminalNode RP() { return getToken(LenguageParser.RP, 0); }
 		public ParensContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class NumContext extends ExprContext {
-		public TerminalNode NUM() { return getToken(LenguajeParser.NUM, 0); }
+		public TerminalNode NUM() { return getToken(LenguageParser.NUM, 0); }
 		public NumContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -996,7 +996,7 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode LT() { return getToken(LenguajeParser.LT, 0); }
+		public TerminalNode LT() { return getToken(LenguageParser.LT, 0); }
 		public LtContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1007,12 +1007,12 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode SUM() { return getToken(LenguajeParser.SUM, 0); }
+		public TerminalNode SUM() { return getToken(LenguageParser.SUM, 0); }
 		public SumContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
 	public static class StringContext extends ExprContext {
-		public TerminalNode STRING() { return getToken(LenguajeParser.STRING, 0); }
+		public TerminalNode STRING() { return getToken(LenguageParser.STRING, 0); }
 		public StringContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1030,7 +1030,7 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode EQ() { return getToken(LenguajeParser.EQ, 0); }
+		public TerminalNode EQ() { return getToken(LenguageParser.EQ, 0); }
 		public EqContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1041,7 +1041,7 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode GT() { return getToken(LenguajeParser.GT, 0); }
+		public TerminalNode GT() { return getToken(LenguageParser.GT, 0); }
 		public GtContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1052,7 +1052,7 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode DIV() { return getToken(LenguajeParser.DIV, 0); }
+		public TerminalNode DIV() { return getToken(LenguageParser.DIV, 0); }
 		public DivContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1063,7 +1063,7 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode MIN() { return getToken(LenguajeParser.MIN, 0); }
+		public TerminalNode MIN() { return getToken(LenguageParser.MIN, 0); }
 		public MinContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1081,7 +1081,7 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode GET() { return getToken(LenguajeParser.GET, 0); }
+		public TerminalNode GET() { return getToken(LenguageParser.GET, 0); }
 		public GetContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1092,7 +1092,7 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode LET() { return getToken(LenguajeParser.LET, 0); }
+		public TerminalNode LET() { return getToken(LenguageParser.LET, 0); }
 		public LetContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 	@SuppressWarnings("CheckReturnValue")
@@ -1103,7 +1103,7 @@ public class LenguajeParser extends Parser {
 		public ExprContext expr(int i) {
 			return getRuleContext(ExprContext.class,i);
 		}
-		public TerminalNode NEQ() { return getToken(LenguajeParser.NEQ, 0); }
+		public TerminalNode NEQ() { return getToken(LenguageParser.NEQ, 0); }
 		public NeqContext(ExprContext ctx) { copyFrom(ctx); }
 	}
 

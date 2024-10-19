@@ -1,4 +1,4 @@
-grammar Lenguaje;
+grammar Lenguage;
 root: procDef* EOF;
 
 inss: ins*;
