@@ -4,24 +4,33 @@ root: procDef* EOF;
 inss: ins*;
 ins: (condition | while_)
 | (input_ | output_ | proc | assign)
-| (agregado) ;
+| (add) | tactics;
 
 input_: '<i>' VAR;
-output_: '<o>' expr+;
+output_: '<o>' (expr)*;
 
-condition: 'if' expr LB inss RB ('else' LB inss RB)?;
+condition: IF expr LB inss RB (ELSE LB inss RB)?;
 while_: 'while' expr LB inss RB;
 siz: SIZE VAR;
 SIZE: '#';
 
-TACTIC: 'LD' | 'CD' | 'CI' | 'LI'  // Defensores
+IF: 'if';
+ELSE: 'else';
+
+tactics: 'tactic' LB tacticName LP position (',' position)* RP RB;
+
+tacticName: STRING;
+
+position: POSITION;
+
+POSITION: 'LD' | 'CD' | 'CI' | 'LI'  // Defensores
     | 'MCI' | 'MCD' | 'MO'       // Mediocampistas
     | 'ED' | 'DC' | 'EI'         // Delanteros
     | 'PO';                     // Portero
 
 PROCNAME: [A-Z][a-zA-Z0-9_]*;
 procDef: PROCNAME paramsId LB inss RB;
-proc: PROCNAME paramsExpr (expr)*;
+proc: PROCNAME paramsExpr;
 
 assign: VAR ASSIGN expr;
 ASSIGN: '::';
@@ -31,14 +40,21 @@ paramsExpr: (expr)*;
 
 
 consult: VAR LS expr RS;
-agregado: VAR AGREGADO expr
-;
+add: VAR ADD expr;
 
-AGREGADO: '<-';
+ADD: '<-';
 
 lista : '{' expr* '}';
 
-expr: expr MUL expr #Mul
+expr:
+  NUM #Num
+| FLOAT #Float
+| VAR #Var
+| STRING #String
+| lista #lst
+| siz #sz
+| consult #consul
+| expr MUL expr #Mul
 | expr DIV expr #Div
 | expr MOD expr #Mod
 | expr SUM expr #Sum
@@ -49,13 +65,6 @@ expr: expr MUL expr #Mul
 | expr LET expr #Let
 | expr EQ expr #Eq
 | expr NEQ expr #Neq
-| VAR #Var
-| STRING #String
-| NUM #Num
-| lista #lst
-| siz #sz
-| consult #consul
-| TACTIC #Tactic
 | LP expr RP #Parens ;
 
 LB: '<<';
@@ -77,7 +86,8 @@ GET: '>=';
 LET: '<=';
 VAR: [a-zA-Z][a-zA-Z0-9]*;
 
-NUM: '-'?[0-9]+('.'[0-9]+)?;
+NUM: '-'?[0-9]+;
+FLOAT: NUM'.'([0-9])+;
 
 STRING: '"' ( '\\' . | ~('\\'|'"'))* '"';
 
