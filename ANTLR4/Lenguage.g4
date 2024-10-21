@@ -24,7 +24,7 @@ tacticName: STRING;
 position: POSITION;
 
 POSITION: 'LD' | 'CD' | 'CI' | 'LI'  // Defensores
-    | 'MCI' | 'MCD' | 'MO'       // Mediocampistas
+    | 'MI' | 'MD' | 'MO'       // Mediocampistas
     | 'ED' | 'DC' | 'EI'         // Delanteros
     | 'PO';                     // Portero
 

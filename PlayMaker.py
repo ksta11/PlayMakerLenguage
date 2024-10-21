@@ -3,6 +3,7 @@ from antlr4 import *
 from ANTLR4.LenguageLexer import LenguageLexer
 from ANTLR4.LenguageParser import LenguageParser
 from ANTLR4.LenguageVisitor import LenguageVisitor
+from MplSoccer import MplSoccer
 
 class EvalVisitor(LenguageVisitor):
 
@@ -92,7 +93,7 @@ class EvalVisitor(LenguageVisitor):
                 move = (previous, position.getText())
                 play.append(move)  # Agrega la jugada
             previous = position.getText()
-        print(name, play)
+        MplSoccer(name, play)
 
     # Visit a parse tree produced by LenguageParser#proc.
     def visitProc(self, ctx: LenguageParser.ProcContext):
@@ -257,14 +258,35 @@ class IteracionError(Exception):
 
 # Función principal para evaluar el archivo de entrada
 def main():
+    if len(sys.argv) == 2:
+        # Leer desde archivo
+        archivo_fuente = sys.argv[1]
+        try:
+            with open(archivo_fuente, 'r') as f:
+                contenido = f.read()
+            print(f"Procesando archivo: {archivo_fuente}")
+            inputStream(contenido)
+        except FileNotFoundError:
+            print(f"Error: El archivo '{archivo_fuente}' no se encontró.")
+    else:
+        # Leer desde la consola
+        print("Ingrese la expresión (escriba 'end' para terminar):")
+        contenido = ""
+        while True:
+            line = input()
+            if line.strip().lower() == 'end':  # Comando para terminar la entrada
+                break
+            contenido += line + "\n"
+        inputStream(contenido)
+
+def inputStream(contenido):
     try:
-        input_stream = InputStream(input("Ingrese una expresión: "))
+        input_stream = InputStream(contenido)
         lexer = LenguageLexer(input_stream)
         stream = CommonTokenStream(lexer)
         parser = LenguageParser(stream)
         tree = parser.root()
 
-        print(f"Árbol de análisis: {tree.toStringTree(recog=parser)}")
 
         visitor = EvalVisitor()
         visitor.visit(tree)
